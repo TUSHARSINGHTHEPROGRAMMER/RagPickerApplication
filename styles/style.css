@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: calc(100% - 100px);
+}
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    width: 50vw;
+    height: 100vh;
+    object-fit: cover;
+    transform: translateX(50vw);
+}
+.container {
+    overflow: hidden;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+}
+.login {
+    width: 50vw;
+    height: 100vh;
+    border: 1px solid black;
+    background-image: url(../images/Capture.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signup {
+    width: 50vw;
+    height: 100vh;
+    border: 1px solid black;
+    background-image: url(../images/Capture.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card > h2 {
+    text-align: center;
+}
+.card {
+    letter-spacing: 1px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    width: auto;
+    min-height: 80vh;
+    height: inherit;
+    margin: 10px;
+    border-radius: 20px;
+}
+.card1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 6px;
+    width: auto;
+    min-height: 80vh;
+    height: auto;
+    background-color: rgba(252, 252, 251, 0.882);
+    border-radius: 20px;
+}
+@keyframes toggle {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(50vw);
+    }
+}
+@keyframes toggle2 {
+    from {
+        transform: translateX(50vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+@keyframes toggle3 {
+    from {
+        transform: translateX(0vw);
+    }
+    to {
+        transform: translateX(-50vw);
+    }
+}
+@keyframes toggle4 {
+    from {
+        transform: translateX(-50vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+.toggle {
+    animation: toggle2 1s ease-in 1 forwards;
+}
+.toggle2 {
+    animation: toggle 1s ease-in 1 forwards;
+}
+.toggle3 {
+    animation: toggle3 1s ease-in 1 forwards;
+}
+.toggle4 {
+    animation: toggle4 1s ease-in 1 forwards;
+}
+.field {
+    width: 18rem;
+    height: 2rem;
+    border-radius: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: 1px solid black;
+}
+.button {
+    width: 10rem;
+    height: 3rem;
+    background-color: blue;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.name {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 4px 4px;
+}
+.field1 {
+    width: 15rem;
+    height: 2rem;
+    border-radius: 10px;
+}
+.button:hover {
+    background-color: rgb(77, 77, 255);
+}
+.check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.check > input {
+    flex: 0 0 5%;
+    width: 20px;
+    height: 20px;
+}
+@media (max-width: 1486px) {
+    .card1 {
+        box-sizing: content-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 6px;
+        width: auto;
+        min-height: 80vh;
+        height: auto;
+        background-color: rgba(252, 252, 251, 0.882);
+        font-size: 0.7em;
+        border-radius: 20px;
+    }
+    .field {
+        width: 9rem;
+        height: 1.2rem;
+        border-radius: 10px;
+        font-size: 16px;
+        margin: 5px;
+        border: 1px solid black;
+    }
+    .button {
+        width: 6rem;
+        height: 3rem;
+        background-color: blue;
+        font-size: 10px;
+        color: white;
+        font-weight: 400;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-top: 15px;
+    }
+    .name {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        margin: 4px 4px;
+    }
+    .field1 {
+        width: 7rem;
+        height: 2rem;
+        border-radius: 10px;
+    }
+    .button:hover {
+        background-color: rgb(77, 77, 255);
+    }
+    .check {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .check > input {
+        flex: 0 0 10%;
+        width: 10px;
+        height: 10px;
+    }
+}

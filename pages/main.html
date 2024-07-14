@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+<div class="head">
+    <div class="nav">
+        <img class="logo" src="../images/logo.JPG" alt="">
+    <a href="">Home</a>
+    <a href="scraped_content.html">Scrap Rates</a>
+    <a href="">About us</a>
+    <a href="">Contact us</a>
+    <div class="profile" id="profile"><img src="../images/user.png" alt=""></div>
+    <img class="menu" src="../images/menu (1).png" alt="">
+</div>
+</div>
+<div class="searchdiv">
+<input class="search" placeholder="Search Items" id="search" type="search"><button  id="btn" class="btn"><img class="img" src="../images/search.png" alt=""></button></div>
+<div id="suggestions" class="suggestions"> </div>
+<div id="main" class="main">
+    
+    <div id="map"></div>
+    <div id="side" class="side"><img id="close" src="../images/close.png" alt=""></div>
+
+</div>
+    <script type="module"  src="../scripts/main.js"></script>
+    <script type="module"  src="../scripts/data.js"></script>
+    
+</body>
+</html>

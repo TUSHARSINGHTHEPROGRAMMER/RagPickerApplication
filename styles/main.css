@@ -1,0 +1,235 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.head {
+    width: 100%;
+    height: 80px;
+}
+.nav {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+    align-items: center;
+    box-shadow: 1px 2px 7px black;
+}
+body {
+    background: rgb(216,181,38);
+    background: radial-gradient(circle, rgba(216,181,38,1) 0%, rgba(192,195,45,1) 47%, rgba(172,153,105,1) 100%);
+}
+.nav > a {
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+}
+.logo {
+    width: 10em;
+    height: 70px;
+}
+.profile {
+    border-radius: 50px;
+    background-color: blanchedalmond;
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.profile > img {
+    width: 2em;
+    height: 2em;
+    margin: auto;
+}
+.nav > a:hover {
+    transform: translateY(3px) scale(1.2);
+    transition: 1s ease;
+}
+.card {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 25em;
+    height: auto;
+    max-height: 150px;
+    max-width: 100%;
+    border-radius: 12px;
+    background-color: rgba(153, 130, 30, 0.977);
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.3);
+    margin: auto;
+    margin-top: 40px;
+    color: black;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 12px;
+    cursor: pointer;
+}
+.card h3 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+.card p {
+    margin: 4px 0;
+    font-size: 0.9em;
+    color: #ffffff;
+}
+.card button {
+    width: 7em;
+    height: 2em;
+    border-radius: 12px;
+    background-color: rgb(245, 245, 220);
+    padding: 1px;
+}
+.menu {
+    width: 1.5em;
+    height: 2em;
+    display: none;
+}
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 10px;
+}
+@media (max-width: 430px) {
+    .menu {
+        display: block;
+        margin-right: 1em;
+        font-size: 1em;
+    }
+    .profile {
+        display: none;
+    }
+    .nav > a {
+        display: none;
+    }
+    .nav {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        width: 6em;
+        height: 3em;
+    }
+}
+@media (max-width: 756px) {
+    .menu {
+        display: block;
+        margin-right: 1em;
+        font-size: 1em;
+    }
+    .nav {
+        width: 100vw;
+    }
+    .nav > a {
+        display: none;
+    }
+    .profile {
+        display: none;
+    }
+    .logo {
+        width: 6em;
+        height: 3em;
+    }
+    .nav {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.searchdiv {
+    display: flex;
+    justify-content: center;
+}
+.search {
+    width: 52%;
+    height: 2em;
+    display: flex;
+    flex-direction: row;
+    border-bottom-left-radius: 12px;
+    border-top-left-radius: 12px;
+    font-size: large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+}
+.btn {
+    padding: 1px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+}
+.img {
+    width: 2rem;
+    height: 1rem;
+}
+#map {
+    height: 70vh;
+    width: 40%;
+    left: 73px;
+    top: 10px;
+}
+.suggestions {
+    border: 1px solid #ccc;
+    width: 54%;
+    max-height: 150px;
+    overflow-y: auto;
+    margin: auto;
+    z-index: 2;
+}
+.suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+}
+.suggestion-item:hover {
+    background-color: #f0f0f0;
+}
+.side {
+    width: 30vw;
+    height: 85vh;
+    background-color: aliceblue;
+    position: absolute;
+    top: 150px;
+    left: -30vw;
+    border-radius: 12px;
+    overflow: scroll;
+}
+#close {
+    position: relative;
+    left: 27vw;
+    top: 12px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+.animate {
+    animation: side 3s ease-in-out 1 forwards;
+}
+.animate2 {
+    animation: side2 1s ease-in-out 1 forwards;
+}
+@keyframes side {
+    from {
+        left: -30vw;
+    }
+    to {
+        left: 0vw;
+    }
+}
+@keyframes side2 {
+    from {
+        left: 0vw;
+    }
+    to {
+        left: -30vw;
+    }
+}

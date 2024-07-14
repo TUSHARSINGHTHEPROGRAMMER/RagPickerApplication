@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kabadi Space</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>    
+    <img id="img" class="img" src="images/vecteezy_one-man-carrying-a-full-garbage-bag-walking-outdoors_25258661.jpg" alt="">
+    <div class="backdrop"></div>
+    <div class="container">
+        <div class="login">
+            <div id="card1" class="card">
+                <form class="card1" action="" method="POST">
+                    <h2>HEY LOGIN TO YOUR KABADI SPACE ACCOUNT</h2>
+                    <div>
+                        <h2>Username</h2>
+                        <input type="text" name="uid" id="username" class="field" required>
+                    </div>
+                    <div>
+                        <h2>Password</h2>
+                        <input type="password" id="password" name="pass" class="field" required>
+                    </div>
+                    <div>
+                        <h2>Select Account Type</h2>
+                        <select class="field" name="type" id="type">
+                            <option class="rounded-md" value="ragpicker">Rag Picker</option>
+                            <option class="rounded-md" value="seller">Seller</option>
+                        </select>
+                    </div>
+                    <div>
+                        <button class="button">Login Now</button>
+                    </div>
+                    <h3 id="login">Don't have an account? <a id="link1" class="" href="#">Register Now</a></h3>
+                </form>
+            </div>
+        </div>
+        <div class="signup">
+            <div class="card" id="card2">
+                <form class="card1" action="" method="POST">
+                    <h2>Register at KABADI SPACE ACCOUNT</h2>
+                    <div class="name">
+                        <h3>First Name</h3>
+                        <input type="text" name="firstname" id="firstname" class="field1" required>
+                        <h3>Last Name</h3>
+                        <input type="text" name="lastname" id="lastname" class="field1" required>
+                    </div>
+                    <div class="name">
+                        <h3>Mobile No.</h3>
+                        <input type="text" name="mobilenumber" id="mobilenumber" class="field1" required>
+                        <h3>Location</h3>
+                        <input type="text" name="location" id="location" class="field1" required>
+                    </div>
+                    <div>
+                        <h3>Choose unique username</h3>
+                        <input type="text" name="uniqueusername" id="uniqueusername" class="field" required>
+                    </div>
+                    <div>
+                        <h3>Password</h3>
+                        <input type="password" id="password1" name="password" class="field" required>
+                    </div>
+                    <div>
+                        <h3>Select Account Type</h3>
+                        <select class="field" name="type" id="sign_up_type">
+                            <option class="rounded-md" value="none">-None-</option>
+                            <option class="rounded-md" value="ragpicker">Rag Picker</option>
+                            <option class="rounded-md" value="seller">Seller</option>
+                        </select>
+                    </div>
+                    <h3>Select item u will buy</h3><br>
+                    <div class="check" id="box">
+                        <input type="checkbox"><h4>Ferrous Iron Scrap</h4>
+                        <input type="checkbox"><h4>Non-Ferrous Iron Scrap</h4>
+                        <input type="checkbox"><h4>Specialized Iron Scrap</h4><br>
+                        <input type="checkbox"><h4>Vehicle Scrap</h4>
+                        <input type="checkbox"><h4>Glass Scrap</h4>
+                        <input type="checkbox"><h4>Raddi Paper Scrap</h4>
+                        <input type="checkbox"><h4>Plastic Scrap</h4>
+                        <input type="checkbox"><h4>Obsolete Iron Scrap</h4>
+                        <input type="checkbox"><h4>Mixed Iron Scrap</h4>
+                    </div>
+                    <div>
+                        <button class="button">Register Now</button>
+                    </div>
+                    <h3 id="register">Already have an account?<a id="link2" class="" href="#">Login</a></h3>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="scripts/data.js"></script>
+    <script type="module" src="scripts/script.js"></script>
+</body>
+</html>
